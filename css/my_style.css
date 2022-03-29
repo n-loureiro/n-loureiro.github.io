@@ -5,7 +5,7 @@ body {font-family: Montserrat, Helvetica Neue, sans-serif; margin: 0 auto; line-
     background: -webkit-linear-gradient(-45deg,  #ffded1 0%,#ffded1 50%,#ffc5af 50%,#ffc5af 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(-45deg,  #ffded1 0%,#ffded1 50%,#ffc5af 50%,#ffc5af 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(-45deg,  #ffded1 0%,#ffded1 50%,#ffc5af 50%,#ffc5af 100%); /* IE10+ */
-    background: linear-gradient(135deg,  #142585 0%,#172168 100%); /* W3C */
+    background: linear-gradient(135deg,  #131A28 0%,#131A28 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffded1', endColorstr='#ffc5af',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     
 
@@ -24,14 +24,14 @@ body {font-family: Montserrat, Helvetica Neue, sans-serif; margin: 0 auto; line-
     .wrapper {box-sizing: border-box; height: 100%; overflow: auto; }
     
     
-    a {text-decoration: none; color: #cecece; border-bottom: 3px solid rgb(255, 211, 34);}
-    a:hover {color: rgb(255, 211, 34)}
+    a {text-decoration: none; color: #cecece; border-bottom: 3px solid #41B883;}
+    a:hover {color: #41B883}
     p {font-weight: 200; font-size: 20px; color:#cecece}
     
     .name {font-family: Montserrat; font-size: 45px; text-transform: uppercase; font-weight: 900; padding: 12px; border: 4px solid #cecece; color: #cecece; display: inline-block; position: absolute; margin-bottom: 60px; top: 60px; left: 90px;}
     
     /* .container {margin: 0 auto; width: 60%; padding: 120px 12px 50px; overflow: auto;} */
-    .container {margin: 0 ; width: 60%; padding: 120px 12px 50px; overflow: auto;}
+    .container {margin: 0 ; padding: 120px 12px 50px; overflow: auto;}
     articlea {padding: 60px; display:block}
     /* TODO find better cross-platform characters */
     /* article::before {
@@ -50,16 +50,101 @@ body {font-family: Montserrat, Helvetica Neue, sans-serif; margin: 0 auto; line-
       color: #0068FF;
       font-size: 44px;
     } */
-    hr {border-bottom: 3px solid rgb(255, 211, 34);}
+    hr {border-bottom: 3px solid #41B883;}
     
-    .meta {text-transform: uppercase; font-family: Arial, Courier New, Source Sans Pro, sans-serif; font-size: 10px; letter-spacing: .15em;}
-    .meta a:hover {color: rgb(255, 211, 34);}
+    .meta {text-transform: uppercase; font-family: Arial, Courier New, Source Sans Pro, sans-serif; font-size: 10px; letter-spacing: .15em;font-weight:bolder;}
+    .meta a:hover {color: #41B883; font-weight:bolder;}
     
     .inline-list {list-style: none; margin: 0; padding: 0;}
-    .inline-list li {display: inline-block;}
+    .inline-list li {display: inline-block; font-weight: bolder;}
     
     footer .inline-list li {margin-right: 40px;font-size: 8pt;}
     footer a {border: none; color: #cecece;}
-    footer {margin: 0 auto; position: absolute; bottom: 3%; left: 60px; padding: 40px 0 0 0; width: 60%; -webkit-transform: rotate(0deg); }
+    footer {
+      margin: 0 auto; position: absolute; bottom: 3%; left: 60px; padding: 40px 0 0 0; width: 60%; -webkit-transform: rotate(0deg); }
     
+
+    .row {
+      display: flex;
+    }
     
+    .column-header {
+      background: linear-gradient(135deg,  #131A28 0%,#131A28 100%); /* W3C */
+      display: inline-block; position: absolute; margin-bottom: 60px;
+      top: 0px;
+      left: 0px;
+      width:100%;
+      height:20%;
+    }
+
+    .footer-row {
+      background: linear-gradient(135deg,  #131A28 0%,#131A28 100%); /* W3C */
+      display: inline-block; position: absolute; margin-bottom: 60px;
+      width:100%
+    }
+
+    .column-left {
+      flex: 50%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .column-left {
+        width: 100%;
+      }
+      .column-right {
+        width: 100%;
+      }
+      .row {
+        display: block;
+      }
+    }
+
+
+    .column-right {
+      flex: 50%;
+    }
+
+    .photo {
+      width: 50%;
+      position: relative;
+      display: block;
+      margin-left: 10%;
+     
+  }
+
+  .photo img{
+    border-radius: 100%;
+    width:100%;
+  }
+  .photo .img-top {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+  }
+  .photo:hover .img-top {
+      display: inline;
+  }
+
+  .photo:hover .img-bottom {
+    display:none;
+}
+
+@media only screen and (max-width: 750px) {
+  .column-left {
+    width: 100%;
+  }
+  .column-right {
+    width: 100%;
+  }
+  .row {
+    display: block;
+  }
+
+  articlea {padding: 5px; display:block}
+
+  .name {font-family: Montserrat; font-size: 25px;  font-weight: 900; padding: 12px; border: 4px solid #cecece; color: #cecece; display: inline-block; position: absolute; margin-bottom: 10px; top: 10px; left: 20px;}
+
+  p {font-weight: 200; font-size:small; color:#cecece}
+}
