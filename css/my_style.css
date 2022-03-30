@@ -232,7 +232,7 @@ footer {
   width: 50%;
   position: relative;
   display: block;
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
 .photo img {
@@ -251,7 +251,7 @@ footer {
   display: none;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   .column-left {
     width: 100%;
     float: none;
@@ -267,10 +267,10 @@ footer {
     width:100%;
   }
   .photo {
-    width: 100%;
+    width: 80%;
     position: relative;
     display: block;
-    margin-left: 0%;
+    margin-left: 10%;
   }
 
   .row {
