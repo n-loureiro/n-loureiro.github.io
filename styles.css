@@ -10,13 +10,15 @@
 html, body { height: 100%; }
 
 body {
-  margin: 0;
+  display: flex;
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
   background: var(--bg);
   color: var(--fg);
   font-family: "Fira Code", monospace;
   font-size: 16px;
   line-height: 1.6;
-
+  padding: 20px;
 }
 
 .wrap {
@@ -64,9 +66,7 @@ a:hover { text-decoration: none; }
 .moonsteps .ascii {
   margin-top: 12px;
   padding: 12px 12px 8px;
-  border: 1px solid #ddd;
   overflow-x: auto;
-  background: #fff;
   font-size: 6px;
   line-height: 1.2;
   white-space: pre;
