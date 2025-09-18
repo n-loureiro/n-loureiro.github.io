@@ -1,54 +1,84 @@
-/* Minimal, diffuse.one-inspired */
 :root {
-  --fg: #111;
-  --bg: #fff;
+  --bg: #f5f4e9;
+  --fg: #333;
+  --link: #6c2e2e; /* change to darkgreen if you prefer */
   --muted: #555;
-  --maxw: 720px;
+  --maxw: 800px;
 }
+
 * { box-sizing: border-box; }
 html, body { height: 100%; }
+
 body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  line-height: 1.6;
+
 }
+
 .wrap {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 32px 20px 64px;
+  padding: 50px 20px 64px;
+  font-family: "Fira Code", monospace;
+  background-color:#f2eec2;
+  font-size:14px;
+  height:100%;
+
 }
+
 h1, h2 {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   margin: 24px 0 8px;
 }
 h1 { font-size: 28px; }
 h2 { font-size: 18px; margin-top: 32px; }
+
 .lede { color: var(--muted); margin-top: 6px; }
-a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
 a:hover { text-decoration: none; }
+
 .links ul {
-  list-style: none; padding: 0; margin: 16px 0 8px;
-  display: flex; flex-wrap: wrap; gap: 14px 18px;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
 }
 .links li { margin: 0; }
-.about p { margin: 8px 0 0; }
+
+.about p { margin: 8px 0; }
+.example { margin-left: 16px; }
+
 .moonsteps .ascii {
   margin-top: 12px;
   padding: 12px 12px 8px;
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
   overflow-x: auto;
-  background: #fafafa;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-  font-size: 12px;
+  background: #fff;
+  font-size: 6px;
   line-height: 1.2;
   white-space: pre;
 }
 .caption { color: var(--muted); margin-top: 8px; }
-footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+
+footer {
+  margin-top: 40px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 @media (min-width: 880px) {
   h1 { font-size: 32px; }
 }
