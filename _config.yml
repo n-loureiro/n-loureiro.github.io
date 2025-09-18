@@ -1,0 +1,4 @@
+# Optional: explicit GitHub Pages config (no theme/Jekyll needed)
+theme: null
+plugins: []
+markdown: kramdown

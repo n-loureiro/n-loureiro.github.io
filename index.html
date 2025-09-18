@@ -1,70 +1,62 @@
-<!doctype html>
-<html>
-  <!-- <canvas id="c"></canvas> -->
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Montserrat" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/my_style.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <title>Nuno Loureiro</title>
-  </head>
-  <body>
-   
-    <div class="wrapper">
-    <div class="container">
-      
-      <div class="row">
-        <div class="column-left">
-          <header>
-            <div class="column-header">
-              <div class="row">
-                <h1 class="name">Nuno Loureiro </h1>
-                  <!-- <ul class="meta contacts inline-list">
-                    <li><a href="mailto:nunoloureird@gmail.com"><i class="fa fa-envelope" style="font-size:24px"></i> </a></li>
-                    <li><a href="https://twitter.com/rocketnuno" target="_blank"><i class="fa fa-twitter" style="font-size:24px"></i> </a></li>
-                    <li><a href="http://www.github.com/n-loureiro" target="_blank"><i class="fa fa-github" style="font-size:24px"></i>  </a></li>
-                    <li><a href="https://www.linkedin.com/in/n-loureiro/" target="_blank"><i class="fa fa-linkedin" style="font-size:24px"></i> </a></li>
-                  </ul> -->
-              </div>
-            </div>
-          </header>
-          <articlea>
-            <p>I'm a Physics Engineer with a PhD. in Neuroscience 🎓.</p>
-            <p>I’ve worked in a wide range of areas in engineering ⚙️ & scientific research 🧪:</p>
-            <!-- <p>&nbsp;&nbsp;&nbsp;&nbsp; - from developing a fully functional Brain Machine Interface <a href="https://fchampalimaud.org/champalimaud-research" target="_blank">Champalimaud Research</a> 🧠🦾 </p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp; - to helping design space missions at the <a href="https://esa.int" target="_blank">European Space Agency</a> 🚀🌒</p> -->
-            <p  class="example">- from developing a fully functional <a href="https://www.forbes.com/sites/leoking/2015/02/25/mind-controlled-drone-scientists-work-on-groundbreaking-flight/?sh=3bcff3ab2eb5" target="_blank">Brain Machine Interface</a> 🧠🦾
-            <p class="example">- to helping design <a href="https://sci.esa.int/web/marcopolo-r/-/49559-spacecraft" target="_blank">space missions</a>  🚀🌒
-            <!-- <p>Currently, I am coordinating a team developing of Data Science 📈 and Web-based solutions 💻 for the Blue Economy and Climate Change 🌊🌎 at <a href="https://colabatlantic.com" target="_blank">+Atlantic</a></p> -->
-            <p>Currently, I develop Data Science 📈 and Web-based solutions 💻 for the Blue Economy and Climate Change 🌊🌎</p>
-            <!-- <p> I enjoy designing solutions to complex problems & lead their execution. 💡 </p>  -->
-            <p> If you have interesting problems you need help with, just get in touch! </p>
-          </articlea>
-       
-        </div>
-        <div class="column-right">
-          <div class="photo">
-            <!-- <img src="/images/me1.jpg" alt="me1" style="border-radius: 50%;"> -->
-            <img src="/images/me3.png" class="img-bottom" alt="me3" style="border-radius: 0px">
-            <img src="/images/me4.png" class="img-top" alt="me2"  style="border-radius: 0px">
-          </div>
-        
-        </div>
-      </div>
-    <footer>
-        <ul class="meta inline-list">
-          <li><a href="mailto:nunoloureird@gmail.com"><i class="fa fa-envelope" style="font-size:24px"></i> </a></li>
-          <li><a href="https://twitter.com/rocketnuno" target="_blank"><i class="fa fa-twitter" style="font-size:24px"></i> </a></li>
-          <li><a href="http://www.github.com/n-loureiro" target="_blank"><i class="fa fa-github" style="font-size:24px"></i>  </a></li>
-          <li><a href="https://www.linkedin.com/in/n-loureiro/" target="_blank"><i class="fa fa-linkedin" style="font-size:24px"></i> </a></li>
-        </ul>
-    </footer>
-  </div>
-  </div>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script> -->
-  <!-- <script src="script.js"></script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nuno Loureiro — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Nuno Loureiro — ML, investigative journalism tools, Moonsteps." />
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Nuno Loureiro</h1>
+      <p class="lede">
+        I build machine-learning systems, investigative-journalism tools, and playful side projects.
+        This minimalist page is inspired by <a href="https://diffuse.one/">diffuse.one</a>.
+      </p>
+    </header>
 
-  </body>
+    <section class="links">
+      <ul>
+        <li><a href="mailto:hello@nuno.example">Email</a></li>
+        <li><a href="https://github.com/" rel="me">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" rel="me">LinkedIn</a></li>
+        <li><a href="#moonsteps">Moonsteps</a></li>
+      </ul>
+    </section>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        Recent focus: AI for investigative journalism (subsidiary extraction, fraud detection,
+        graph analysis), custom YOLO object detection, and lean web products.
+      </p>
+    </section>
+
+    <section id="moonsteps" class="moonsteps">
+      <h2>Moonsteps</h2>
+      <pre class="ascii" aria-label="Moonsteps ASCII logo">
+                                                                                                                                                        
+                                                                                                                                                        
+                                  ...                                                .                                                       .          
+       *%%           .%%=    .#*-:..:+#%*        *%%*++*#%#:    .%%-        :%   =%#-:.:+%#  ------#%-----: :%=---------  ##-----=#%*    *%*::.:*%*     
+       **#*          %*%=   *.          =%*    #%:         *%:  .#-%+       :%  *#        =%       *%       :%:           ##        *%  ##        *%    
+       *# #*        *# %=  =              %#  %*            :%* .%: ##      :%  *%         :.      *%       :%:           ##        :%. ##        .:    
+       *# .%-      +#  %= :               :%:*#              +%. %:  =%-    :%   =%#:              *%       :%:           ##        *%   *%*:           
+       *#  :%:    -%:  %=                  #=#*              :%:.%:   :%=   :%      -*#%#=.        *%       :%********+   ##-----=*%*       -*#%#-      
+       *#   +%   :%:   %=                 .% *%              *% .#:     %*  :%           :%#       *%       :%:           ##                     -%*    
+       *#    *#  %=    %=                 #*  %*            :%* .%:      *%.:% :#:        .%=      *%       :%:           ##           :#         :%    
+       *#     %*%*     %=               .#:    #%-         *%:  .#:       :%*%  ##        =%.      *%       :%:           ##            ##        *%    
+       *#      %%      %=             -#.        *%%#***%%#:    .%:         %%   .#%%#*#%%*        *%       :%%%%%%%%%%%  ##             :#%%#*#%%=
+      </pre>
+      <p class="caption"><em>Moonsteps</em> is my ongoing exploration into creativity, technology, and collaboration.</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Nuno Loureiro</p>
+    </footer>
+  </main>
+</body>
 </html>
